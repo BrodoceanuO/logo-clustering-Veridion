@@ -1,0 +1,402 @@
+[
+  {
+    "filename": "aamco-bellevue_com.png",
+    "path": "test\\results\\logos\\aamco-bellevue_com.png",
+    "features": {
+      "edge_density": 0.1342502170138889,
+      "dominant_color": [
+        235,
+        239,
+        245
+      ],
+      "hue_family": "white",
+      "aspect_ratio": 1.3241379310344827,
+      "sharpness": 0.0,
+      "shape": [
+        0.7616,
+        2.4077,
+        6.305,
+        7.6762,
+        -10.0,
+        -8.8628,
+        -10.0
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "aamco-chesapeakeva_com.ico",
+    "path": "test\\results\\logos\\aamco-chesapeakeva_com.ico",
+    "features": {
+      "edge_density": 0.13330078125,
+      "dominant_color": [
+        234,
+        240,
+        246
+      ],
+      "hue_family": "white",
+      "aspect_ratio": 1.3357142857142856,
+      "sharpness": 0.0,
+      "shape": [
+        0.7593,
+        2.372,
+        6.2125,
+        7.5889,
+        -10.0,
+        -8.8425,
+        -10.0
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "aamco-corpuschristi_com.png",
+    "path": "test\\results\\logos\\aamco-corpuschristi_com.png",
+    "features": {
+      "edge_density": 0.1342502170138889,
+      "dominant_color": [
+        235,
+        239,
+        245
+      ],
+      "hue_family": "white",
+      "aspect_ratio": 1.3241379310344827,
+      "sharpness": 0.0,
+      "shape": [
+        0.7616,
+        2.4077,
+        6.305,
+        7.6762,
+        -10.0,
+        -8.8628,
+        -10.0
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "habitat_hu.png",
+    "path": "test\\results\\logos\\habitat_hu.png",
+    "features": {
+      "edge_density": 0.08528575629840211,
+      "dominant_color": [
+        253,
+        253,
+        253
+      ],
+      "hue_family": "white",
+      "aspect_ratio": 1.2625,
+      "sharpness": 0.237,
+      "shape": [
+        0.5542,
+        2.0253,
+        5.7759,
+        4.1185,
+        -9.0255,
+        -5.1373,
+        9.5717
+      ],
+      "mask_strategy": "background"
+    }
+  },
+  {
+    "filename": "habitatbroward_org.png",
+    "path": "test\\results\\logos\\habitatbroward_org.png",
+    "features": {
+      "edge_density": 0.0562,
+      "dominant_color": [
+        9,
+        175,
+        217
+      ],
+      "hue_family": "blue",
+      "aspect_ratio": 0.9948717948717949,
+      "sharpness": 0.0,
+      "shape": [
+        0.7813,
+        6.159,
+        8.9852,
+        9.7775,
+        -10.0,
+        -9.9998,
+        -10.0
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "habitatcoosavalley_org.ico",
+    "path": "test\\results\\logos\\habitatcoosavalley_org.ico",
+    "features": {
+      "edge_density": 0.14814516129032257,
+      "dominant_color": [
+        23,
+        89,
+        138
+      ],
+      "hue_family": "blue",
+      "aspect_ratio": 0.7181818181818181,
+      "sharpness": 0.448,
+      "shape": [
+        0.727,
+        3.0373,
+        3.7341,
+        4.6927,
+        -8.9864,
+        -6.3209,
+        9.036
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "habitatindiana_org.png",
+    "path": "test\\results\\logos\\habitatindiana_org.png",
+    "features": {
+      "edge_density": 0.1736111111111111,
+      "dominant_color": [
+        150,
+        85,
+        0
+      ],
+      "hue_family": "orange",
+      "aspect_ratio": 1.2,
+      "sharpness": 0.632,
+      "shape": [
+        0.6964,
+        3.0192,
+        3.7888,
+        4.3112,
+        9.8078,
+        -5.8526,
+        8.3514
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "habitativ_org.ico",
+    "path": "test\\results\\logos\\habitativ_org.ico",
+    "features": {
+      "edge_density": 0.07047619047619047,
+      "dominant_color": [
+        196,
+        214,
+        59
+      ],
+      "hue_family": "yellow",
+      "aspect_ratio": 1.2105263157894737,
+      "sharpness": 0.449,
+      "shape": [
+        0.7714,
+        3.0594,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mask_strategy": "background"
+    }
+  },
+  {
+    "filename": "habitatmichigan_org.png",
+    "path": "test\\results\\logos\\habitatmichigan_org.png",
+    "features": {
+      "edge_density": 0.054933333333333334,
+      "dominant_color": [
+        2,
+        85,
+        149
+      ],
+      "hue_family": "blue",
+      "aspect_ratio": 1.6951219512195121,
+      "sharpness": 0.413,
+      "shape": [
+        0.7782,
+        0.0,
+        10.0,
+        10.0,
+        10.0,
+        0.0,
+        0.0
+      ],
+      "mask_strategy": "background"
+    }
+  },
+  {
+    "filename": "habitatns_ca.png",
+    "path": "test\\results\\logos\\habitatns_ca.png",
+    "features": {
+      "edge_density": 0.05831111111111111,
+      "dominant_color": [
+        0,
+        0,
+        0
+      ],
+      "hue_family": "black",
+      "aspect_ratio": 1.25,
+      "sharpness": 0.189,
+      "shape": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "wwf_at.jpg",
+    "path": "test\\results\\logos\\wwf_at.jpg",
+    "features": {
+      "edge_density": 0.21484375,
+      "dominant_color": [
+        36,
+        34,
+        35
+      ],
+      "hue_family": "black",
+      "aspect_ratio": 0.896551724137931,
+      "sharpness": 0.512,
+      "shape": [
+        0.7782,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        -10.0,
+        0.0
+      ],
+      "mask_strategy": "background"
+    }
+  },
+  {
+    "filename": "wwf_es.ico",
+    "path": "test\\results\\logos\\wwf_es.ico",
+    "features": {
+      "edge_density": 0.2509765625,
+      "dominant_color": [
+        2,
+        2,
+        2
+      ],
+      "hue_family": "black",
+      "aspect_ratio": 1.0,
+      "sharpness": 0.387,
+      "shape": [
+        0.6232,
+        2.439,
+        3.0488,
+        3.2605,
+        6.6198,
+        -4.6145,
+        -6.5221
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "wwf_no.ico",
+    "path": "test\\results\\logos\\wwf_no.ico",
+    "features": {
+      "edge_density": 0.3203125,
+      "dominant_color": [
+        64,
+        64,
+        64
+      ],
+      "hue_family": "black",
+      "aspect_ratio": 1.0,
+      "sharpness": 0.371,
+      "shape": [
+        0.7782,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mask_strategy": "background"
+    }
+  },
+  {
+    "filename": "zkteco_co_za.png",
+    "path": "test\\results\\logos\\zkteco_co_za.png",
+    "features": {
+      "edge_density": 0.0672,
+      "dominant_color": [
+        246,
+        247,
+        246
+      ],
+      "hue_family": "white",
+      "aspect_ratio": 3.8181818181818183,
+      "sharpness": 0.455,
+      "shape": [
+        0.3241,
+        0.753,
+        2.1141,
+        2.49,
+        4.8049,
+        2.9417,
+        -5.4121
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "zkteco_com_bd.png",
+    "path": "test\\results\\logos\\zkteco_com_bd.png",
+    "features": {
+      "edge_density": 0.03617777777777778,
+      "dominant_color": [
+        71,
+        70,
+        72
+      ],
+      "hue_family": "black",
+      "aspect_ratio": 4.344827586206897,
+      "sharpness": 0.529,
+      "shape": [
+        0.4082,
+        0.9036,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "mask_strategy": "alpha"
+    }
+  },
+  {
+    "filename": "zkteco_com_eg.png",
+    "path": "test\\results\\logos\\zkteco_com_eg.png",
+    "features": {
+      "edge_density": 0.03617777777777778,
+      "dominant_color": [
+        71,
+        70,
+        72
+      ],
+      "hue_family": "black",
+      "aspect_ratio": 4.344827586206897,
+      "sharpness": 0.529,
+      "shape": [
+        0.4082,
+        0.9036,
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "mask_strategy": "alpha"
+    }
+  }
+]

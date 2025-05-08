@@ -1,0 +1,1082 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://avis.cr/favico.ico" type="image/x-icon">
+    <link rel="icon" href="https://avis.cr/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="https://avis.cr/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="https://avis.cr/apple-touch-icon.png">
+    <link rel="icon" href="https://avis.cr/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="https://avis.cr/android-chrome-512x512.png" sizes="512x512" type="image/png">
+
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Greenflame">
+        <meta name="google-site-verification" content="6rxvQ7f2yQqOmkN9W6KKtUR54QR0s0sZVtz4IjCfqAI" />
+        
+        
+        
+            
+    <title>Not Found</title>
+
+    
+    
+    <!-- Font Awesome -->
+    
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="https://avis.cr/dist/css/app.css?v=">
+
+    <!-- END: CSS Assets-->
+    
+
+    
+        
+                </head>
+
+
+    <body class="antialiased CR" id="body">
+        <div class="fixed h-full w-full top-0 bg-black/25 items-center justify-center backdrop-blur-sm z-[1056] transition-all flex opacity-1"
+    id="spinner">
+    <div class="transition-transform relative pointer-events-none select-none">
+        <svg width="52" height="16" class="w-[70px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M45.6718 4.19001C44.7041 3.33252 43.8333 3.04019 42.9044 3.04019C41.9754 3.04019 40.7949 3.3715 40.7949 4.56029C40.7949 5.57369 41.6852 5.90499 43.1172 6.37272C45.1686 7.03532 47.8005 7.89281 47.8005 10.933C47.8005 14.4409 45.0138 16 42.0141 16C39.866 16 37.6792 15.201 36.3632 13.8173L38.6081 11.4982C39.4983 12.4726 40.8336 12.9793 42.0335 12.9793C43.1366 12.9793 44.1236 12.5505 44.1236 11.3228C44.1236 10.1535 42.9624 9.78319 40.9885 9.12058C39.0726 8.49695 37.1373 7.54202 37.1373 4.79415C37.118 1.40317 40.137 0 42.9624 0C44.6654 0 46.5813 0.643118 47.9166 1.87089L45.6718 4.19001ZM9.98586 9.66626H6.17343L8.08932 4.44336L9.98586 9.66626ZM16.198 15.5907L10.0246 0.389769H6.3863L0 15.5907H4.02531L5.1284 12.609H10.9728L12.1533 15.5907H16.198ZM29.1641 0.389769H25.1388L21.636 11.3812L18.0752 0.389769H13.9725L19.6814 15.5907H23.3197L29.1641 0.389769ZM30.6156 15.5907H34.2925V0.389769H30.6156V15.5907ZM49.4068 1.676C49.4068 2.39708 49.9874 2.96224 50.7034 2.96224C51.4194 2.96224 52 2.39708 52 1.676C52 0.954933 51.4194 0.389769 50.7034 0.389769C49.9874 0.389769 49.4068 0.954933 49.4068 1.676ZM49.6003 1.676C49.6003 1.07186 50.0841 0.584653 50.684 0.584653C51.284 0.584653 51.7678 1.07186 51.7678 1.676C51.7678 2.28015 51.284 2.76736 50.684 2.76736C50.1035 2.76736 49.6003 2.28015 49.6003 1.676ZM50.2002 2.39708H50.4712V1.79294H50.6647L50.9937 2.39708H51.3033L50.9163 1.75396C51.1291 1.71498 51.2453 1.57856 51.2453 1.36419C51.2453 1.05238 50.9743 0.935445 50.7034 0.935445H50.2002V2.39708ZM50.4518 1.57856V1.16931H50.684C50.8195 1.16931 50.9743 1.20828 50.9743 1.36419C50.9743 1.53959 50.8001 1.57856 50.6453 1.57856H50.4518Z" fill="#D4002A"/>
+        </svg>            
+        <img src="https://avis.cr/dist/images/spinner.webp" class="h-28 w-28 animate-spin pointer-events-none"/>
+    </div>
+</div>
+
+
+            <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-hidden group" id="response-modal"
+    tabindex="-1" aria-labelledby="response-modal" aria-modal="true" role="dialog">
+    <div class="modal-dialog mx-[25px] sm:mx-auto pointer-events-none modal-dialog-centered justify-center sm:max-w-[420px]"
+        wire:ignore.self>
+        <div
+            class="modal-content border-none relative flex flex-col w-full pointer-events-auto bg-white outline-none text-current rounded-[15px] px-11 py-8">
+            <div class="modal-header flex flex-col items-center justify-center">
+                <div class="flex items-center justify-center h-16">
+                    <div class="hidden group-data-[state=error]:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-custom-error" viewBox="0 0 61 61" fill="none">
+                            <path d="M61 30.4994C61 13.6546 47.3444 0 30.5006 0C13.6556 0 0 13.6546 0 30.4994C0 47.3445 13.6556 61 30.5006 61C47.3444 61 61 47.3445 61 30.4994Z" />
+                            <path d="M21 39L38 22M21 22L38 39" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="hidden group-data-[state=warning]:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-custom-alert" viewBox="0 0 61 61" fill="none">
+                            <path d="M61 30.4994C61 13.6546 47.3444 0 30.5006 0C13.6556 0 0 13.6546 0 30.4994C0 47.3445 13.6556 61 30.5006 61C47.3444 61 61 47.3445 61 30.4994Z" />
+                            <path d="M26.8641 42.7257V42.6522C26.8641 40.653 28.4852 39.0322 30.4843 39.0322H30.5579C32.5568 39.0322 34.1779 40.653 34.1779 42.6522V42.7257C34.1779 44.7248 32.5568 46.3457 30.5579 46.3457H30.4843C28.4852 46.3457 26.8641 44.7248 26.8641 42.7257ZM28.1542 34.771L26.5099 19.0339C26.2653 16.6923 28.1016 14.6535 30.4561 14.6535H30.545C32.8973 14.6535 34.7336 16.6898 34.4915 19.0303L32.8631 34.7688C32.7392 35.964 31.7322 36.8731 30.5299 36.8731H30.4866C29.2854 36.8731 28.2782 35.9654 28.1542 34.771Z" fill="white"/>
+                        </svg>
+                    </div>
+
+                    <div class="hidden group-data-[state=success]:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-custom-success" viewBox="0 0 61 61" fill="none">
+                            <path d="M61 30.4994C61 13.6546 47.3444 0 30.5006 0C13.6556 0 0 13.6546 0 30.4994C0 47.3445 13.6556 61 30.5006 61C47.3444 61 61 47.3445 61 30.4994Z" />
+                            <path d="M20 32L26 38L41 23" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="hidden group-data-[state=loading]:block">
+                        <div class="relative">
+                            <svg width="52" height="16" class="w-[26px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" viewBox="0 0 52 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.6718 4.19001C44.7041 3.33252 43.8333 3.04019 42.9044 3.04019C41.9754 3.04019 40.7949 3.3715 40.7949 4.56029C40.7949 5.57369 41.6852 5.90499 43.1172 6.37272C45.1686 7.03532 47.8005 7.89281 47.8005 10.933C47.8005 14.4409 45.0138 16 42.0141 16C39.866 16 37.6792 15.201 36.3632 13.8173L38.6081 11.4982C39.4983 12.4726 40.8336 12.9793 42.0335 12.9793C43.1366 12.9793 44.1236 12.5505 44.1236 11.3228C44.1236 10.1535 42.9624 9.78319 40.9885 9.12058C39.0726 8.49695 37.1373 7.54202 37.1373 4.79415C37.118 1.40317 40.137 0 42.9624 0C44.6654 0 46.5813 0.643118 47.9166 1.87089L45.6718 4.19001ZM9.98586 9.66626H6.17343L8.08932 4.44336L9.98586 9.66626ZM16.198 15.5907L10.0246 0.389769H6.3863L0 15.5907H4.02531L5.1284 12.609H10.9728L12.1533 15.5907H16.198ZM29.1641 0.389769H25.1388L21.636 11.3812L18.0752 0.389769H13.9725L19.6814 15.5907H23.3197L29.1641 0.389769ZM30.6156 15.5907H34.2925V0.389769H30.6156V15.5907ZM49.4068 1.676C49.4068 2.39708 49.9874 2.96224 50.7034 2.96224C51.4194 2.96224 52 2.39708 52 1.676C52 0.954933 51.4194 0.389769 50.7034 0.389769C49.9874 0.389769 49.4068 0.954933 49.4068 1.676ZM49.6003 1.676C49.6003 1.07186 50.0841 0.584653 50.684 0.584653C51.284 0.584653 51.7678 1.07186 51.7678 1.676C51.7678 2.28015 51.284 2.76736 50.684 2.76736C50.1035 2.76736 49.6003 2.28015 49.6003 1.676ZM50.2002 2.39708H50.4712V1.79294H50.6647L50.9937 2.39708H51.3033L50.9163 1.75396C51.1291 1.71498 51.2453 1.57856 51.2453 1.36419C51.2453 1.05238 50.9743 0.935445 50.7034 0.935445H50.2002V2.39708ZM50.4518 1.57856V1.16931H50.684C50.8195 1.16931 50.9743 1.20828 50.9743 1.36419C50.9743 1.53959 50.8001 1.57856 50.6453 1.57856H50.4518Z" fill="#D4002A"/>
+                            </svg>            
+                            <img  src="https://avis.cr/dist/images/spinner.webp" class="h-16 w-16 animate-spin pointer-events-none"/>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="font-semibold text-custom-primary text-center mt-8 text-lg" id="response-modal-title">
+                </h5>
+            </div>
+
+            <div class="modal-body mt-2.5 text-center text-black text-[13px]" id="response-modal-content"></div>
+
+            <div class="modal-footer flex items-center justify-center mt-8 gap-x-4" id ="response-modal-buttons"></div>
+
+            <template id="button-template">
+                <button type="button" class="group outline-none flex-1 max-w-[50%]" id="">
+    <div
+    class="h-full transition-all text-[13px] font-bold rounded-[10px] flex items-center justify-center py-3 gap-x-3 group-disabled:cursor-not-allowed  group-disabled:text-custom-grayscale-dark group-disabled:bg-custom-grayscale-semilight outline-none text-white bg-custom-primary hover:bg-custom-primary/80 !rounded-[8px] !text-[12px] !py-2.5">
+            <span>Test</span>
+        </div>
+</button>
+            </template>
+        </div>
+    </div>
+</div>
+
+
+    
+            <header>
+        <nav wire:id="nm23i79y1rAOj9UV68NX" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;nm23i79y1rAOj9UV68NX&quot;,&quot;name&quot;:&quot;components.navbar&quot;,&quot;locale&quot;:&quot;es_costarica&quot;,&quot;path&quot;:&quot;favico.ico&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:{&quot;l980438416-0&quot;:{&quot;id&quot;:&quot;WVS83eWEoQCfsPh48UPG&quot;,&quot;tag&quot;:&quot;div&quot;},&quot;l980438416-1&quot;:{&quot;id&quot;:&quot;ShBUitcLG87qF5U0Zwav&quot;,&quot;tag&quot;:&quot;div&quot;}},&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;f230b898&quot;,&quot;data&quot;:{&quot;user&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;107578bbc60e96ea828ba4663823360093f45c8eaf85dee2aca25b16ad46b038&quot;}}" class="flex items-center bg-white w-full h-[80px] mx-auto">
+    <div class="flex justify-between items-center mx-auto container_1280">
+        <div class="h-[35px] mt-[9px] xl:mt-0">
+            <a
+                href="https://avis.cr"
+                            >
+                <img style="width: 90px; height: auto;" src="https://avis.cr/dist/images/logo.svg" alt="Avis logo">
+            </a>
+        </div>
+
+        <div class="items-center gap-x-9 hidden xl:flex">
+        <div class="flex gap-x-9 text-[13px] font-semibold flex-col divide-y divide-custom-grayscale-semiblue xl:flex-row xl:divide-y-0">
+        
+        <button data-bs-toggle="modal" data-bs-target="#searchBookingModal"
+            class="text-left py-3.5 text-black hover:opacity-80 transition-opacity">Gestiona reserva</button>
+
+        
+                    <a href="https://avis.cr/fleet-guide" class="text-black py-3.5 hover:opacity-80 transition-opacity">Flota</a>
+        
+        
+        <a href="https://avis.cr/offices" class="text-black py-3.5 hover:opacity-80 transition-opacity">Sucursales</a>
+
+        
+                    <a href="https://avis.cr/sales-vehicles" class="text-black py-3.5 hover:opacity-80 transition-opacity">Venta de autos</a>
+        
+        
+                    
+            <a href="https://avis.cr/renting" class="text-black py-3.5 hover:opacity-80 transition-opacity">Renting</a>
+
+            
+            <a href="https://avis.cr/contact" class="text-black py-3.5 hover:opacity-80 transition-opacity">Contáctenos</a>
+            </div>
+
+    <div class="flex gap-x-6 mt-4 xl:mt-0 items-center self-center flex-col gap-y-4 w-full xl:flex-row xl:w-auto">
+        <div class="border-l-[3px] border-custom-grayscale-semiblue h-6 hidden xl:block"></div> 
+
+        
+        <div class="relative dropdown w-full xl:w-auto">
+            <button id="lang-dropdown" data-bs-toggle="dropdown" class="bg-white rounded-[10px] font-semibold text-[13px] flex w-full xl:w-auto items-center text-black py-2.5 px-3 justify-center" style="box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" fill="none" class="h-5 mr-3">
+                        <path d="M19.0159 4.90529V14.2539C19.0159 16.8754 16.9089 19 14.31 19H5.03888C2.43993 19 0.333008 16.8754 0.333008 14.2539V4.90529C0.333008 2.28432 2.43993 0.159739 5.03888 0.159739H14.31C16.9089 0.159739 19.0159 2.28432 19.0159 4.90529Z" fill="#D0343D"/>
+                        <path d="M0.333008 14.5196L0.333008 4.64001L19.0159 4.64001L19.0159 14.5196L0.333008 14.5196Z" fill="#FBDD23"/>
+                    </svg>
+                                Español
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 fill-custom-grayscale-dark ml-3.5" viewBox="0 0 8 5" fill="none">
+                    <path d="M4.44508 4.37496L7.44071 1.3853C7.66972 1.15654 7.73372 0.67804 7.58072 0.334523C7.42821 -0.0082438 7.10819 -0.104271 6.87868 0.12449L4.16406 2.83364L1.44944 0.12449C1.21993 -0.104271 0.900417 -0.00824434 0.74741 0.334523C0.594402 0.67804 0.658405 1.15654 0.887416 1.3853L3.88304 4.37496C4.05105 4.54222 4.27707 4.54222 4.44508 4.37496Z" />
+                </svg>
+            </button>
+            <ul class="dropdown-menu shadow-xl absolute !mt-1.5 rounded-[10px] bg-white overflow-hidden hidden w-full text-black min-w-max language-menu text-[13px] font-semibold"
+                aria-labelledby="lang-dropdown">
+                                                                                                <li>
+                            <button class="dropdown-item hover:bg-custom-grayscale-semilight px-3 py-2.5 w-full text-left flex items-center" data-lang="en">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" fill="none" class="h-5 mr-3 flex-shrink-0">
+                                        <g clip-path="url(#clip0_602_35)">
+                                        <path d="M0 0H18.68V18.84H0V0Z" fill="#012169"/>
+                                        <path d="M18.68 0V2.355L11.748 9.42L18.68 16.301V18.84H16.2355L9.26703 11.9222L2.48094 18.84H0V16.3378L6.78609 9.4568L0 2.72297V0H2.26203L9.26703 6.91781L16.0531 0H18.68Z" fill="white"/>
+                                        <path d="M6.71313 11.9222L7.11445 13.1733L1.53234 18.84H0V18.7296L6.71313 11.9222ZM11.2372 11.4806L13.2073 11.775L18.68 17.1841V18.84L11.2372 11.4806ZM18.68 0L11.675 7.21219L11.5291 5.59313L17.0017 0H18.68ZM0 0.0367969L7.04148 6.99141L4.88891 6.69703L0 1.80305V0.0367969Z" fill="#C8102E"/>
+                                        <path d="M6.42125 0V18.84H12.2588V0H6.42125ZM0 6.47625V12.3638H18.68V6.47625H0Z" fill="white"/>
+                                        <path d="M0 7.65375V11.1863H18.68V7.65375H0ZM7.58875 0V18.84H11.0913V0H7.58875Z" fill="#C8102E"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_602_35">
+                                        <rect width="18.68" height="18.84" rx="5" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                                                Inglés
+                            </button>
+                        </li>
+                                                </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="offcanvas offcanvas-start fixed bottom-0 flex flex-col bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out top-0 left-0 border-none p-8 w-96 max-w-full" id="navbar-offcanvas">
+            <img class="w-1/2 mb-5" src="https://avis.cr/dist/images/logo.svg" alt="logo">
+        <div class="flex gap-x-9 text-[13px] font-semibold flex-col divide-y divide-custom-grayscale-semiblue xl:flex-row xl:divide-y-0">
+        
+        <button data-bs-toggle="modal" data-bs-target="#searchBookingModal"
+            class="text-left py-3.5 text-black hover:opacity-80 transition-opacity">Gestiona reserva</button>
+
+        
+                    <a href="https://avis.cr/fleet-guide" class="text-black py-3.5 hover:opacity-80 transition-opacity">Flota</a>
+        
+        
+        <a href="https://avis.cr/offices" class="text-black py-3.5 hover:opacity-80 transition-opacity">Sucursales</a>
+
+        
+                    <a href="https://avis.cr/sales-vehicles" class="text-black py-3.5 hover:opacity-80 transition-opacity">Venta de autos</a>
+        
+        
+                    
+            <a href="https://avis.cr/renting" class="text-black py-3.5 hover:opacity-80 transition-opacity">Renting</a>
+
+            
+            <a href="https://avis.cr/contact" class="text-black py-3.5 hover:opacity-80 transition-opacity">Contáctenos</a>
+            </div>
+
+    <div class="flex gap-x-6 mt-4 xl:mt-0 items-center self-center flex-col gap-y-4 w-full xl:flex-row xl:w-auto">
+        <div class="border-l-[3px] border-custom-grayscale-semiblue h-6 hidden xl:block"></div> 
+
+        
+        <div class="relative dropdown w-full xl:w-auto">
+            <button id="lang-dropdown" data-bs-toggle="dropdown" class="bg-white rounded-[10px] font-semibold text-[13px] flex w-full xl:w-auto items-center text-black py-2.5 px-3 justify-center" style="box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" fill="none" class="h-5 mr-3">
+                        <path d="M19.0159 4.90529V14.2539C19.0159 16.8754 16.9089 19 14.31 19H5.03888C2.43993 19 0.333008 16.8754 0.333008 14.2539V4.90529C0.333008 2.28432 2.43993 0.159739 5.03888 0.159739H14.31C16.9089 0.159739 19.0159 2.28432 19.0159 4.90529Z" fill="#D0343D"/>
+                        <path d="M0.333008 14.5196L0.333008 4.64001L19.0159 4.64001L19.0159 14.5196L0.333008 14.5196Z" fill="#FBDD23"/>
+                    </svg>
+                                Español
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 fill-custom-grayscale-dark ml-3.5" viewBox="0 0 8 5" fill="none">
+                    <path d="M4.44508 4.37496L7.44071 1.3853C7.66972 1.15654 7.73372 0.67804 7.58072 0.334523C7.42821 -0.0082438 7.10819 -0.104271 6.87868 0.12449L4.16406 2.83364L1.44944 0.12449C1.21993 -0.104271 0.900417 -0.00824434 0.74741 0.334523C0.594402 0.67804 0.658405 1.15654 0.887416 1.3853L3.88304 4.37496C4.05105 4.54222 4.27707 4.54222 4.44508 4.37496Z" />
+                </svg>
+            </button>
+            <ul class="dropdown-menu shadow-xl absolute !mt-1.5 rounded-[10px] bg-white overflow-hidden hidden w-full text-black min-w-max language-menu text-[13px] font-semibold"
+                aria-labelledby="lang-dropdown">
+                                                                                                <li>
+                            <button class="dropdown-item hover:bg-custom-grayscale-semilight px-3 py-2.5 w-full text-left flex items-center" data-lang="en">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" fill="none" class="h-5 mr-3 flex-shrink-0">
+                                        <g clip-path="url(#clip0_602_35)">
+                                        <path d="M0 0H18.68V18.84H0V0Z" fill="#012169"/>
+                                        <path d="M18.68 0V2.355L11.748 9.42L18.68 16.301V18.84H16.2355L9.26703 11.9222L2.48094 18.84H0V16.3378L6.78609 9.4568L0 2.72297V0H2.26203L9.26703 6.91781L16.0531 0H18.68Z" fill="white"/>
+                                        <path d="M6.71313 11.9222L7.11445 13.1733L1.53234 18.84H0V18.7296L6.71313 11.9222ZM11.2372 11.4806L13.2073 11.775L18.68 17.1841V18.84L11.2372 11.4806ZM18.68 0L11.675 7.21219L11.5291 5.59313L17.0017 0H18.68ZM0 0.0367969L7.04148 6.99141L4.88891 6.69703L0 1.80305V0.0367969Z" fill="#C8102E"/>
+                                        <path d="M6.42125 0V18.84H12.2588V0H6.42125ZM0 6.47625V12.3638H18.68V6.47625H0Z" fill="white"/>
+                                        <path d="M0 7.65375V11.1863H18.68V7.65375H0ZM7.58875 0V18.84H11.0913V0H7.58875Z" fill="#C8102E"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_602_35">
+                                        <rect width="18.68" height="18.84" rx="5" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                                                Inglés
+                            </button>
+                        </li>
+                                                </ul>
+        </div>
+    </div>
+</div>
+
+        <button class="outline-none xl:hidden h-10 w-10 flex items-center justify-center" data-bs-target="#navbar-offcanvas"
+            data-bs-toggle="offcanvas" id="nav-menu-btn">
+            <div class="lines">
+                <span class="line bg-black"></span>
+                <span class="line bg-black"></span>
+                <span class="line bg-black"></span>
+            </div>
+        </button>
+    </div>
+    <div wire:id="WVS83eWEoQCfsPh48UPG" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;WVS83eWEoQCfsPh48UPG&quot;,&quot;name&quot;:&quot;components.booking-search&quot;,&quot;locale&quot;:&quot;es_costarica&quot;,&quot;path&quot;:&quot;favico.ico&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;c82ace89&quot;,&quot;data&quot;:[],&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;7bf9eef5bb3acf7ffe4311c7e753b392d6095e6325423361ad10afb524824400&quot;}}" wire:ignore.self class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+  id="searchBookingModal" tabindex="-1" aria-labelledby="searchBookingModal" aria-hidden="true">
+  <div class="modal-dialog relative top-1/4 w-auto sm:max-w-[680px] pointer-events-none my-0">
+
+    <div class="modal-content bg-white pointer-events-auto rounded-[15px]">
+        <div class="modal-body grid grid-cols-12">
+
+            <div class="col-span-5 hidden sm:block">
+                                    <img class="w-full h-full object-cover rounded-l-[15px]" src="https://avis.cr/dist/images/home/modals/image_search_reservation.webp" alt="">
+                            </div>
+
+            <div class="col-span-12 sm:col-span-7 grid grid-cols-12 px-11 py-8 gap-y-4">
+                <div class="col-span-12">
+                    <div class="flex mb-5 items-center justify-between">
+                        <h5 class="text-lg font-semibold text-custom-primary">Gestionar mi reserva</h5>
+                        <button type="button"
+                            class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                        </button>
+                    </div>
+
+                    <p class="text-[13px] leading-4 text-black">Para realizar modificaciones en su reserva deberá ingresar la siguiente información</p>
+                </div>
+                <div id="search-booking-form" class="col-span-12 flex flex-col">
+                    <div class="relative mb-5">
+                <input
+        class="text-black text-[13px] rounded-[10px] border-2 transition-all py-3 px-6 w-full outline-none placeholder:text-custom-grayscale-dark border-custom-grayscale-light hover:border-custom-primary-light focus:border-custom-primary-light" type="text" autocomplete="off" placeholder="Apellido" id="search-form-lastname"
+                        />
+</div>
+                    <div class="relative mb-5">
+                <input
+        class="text-black text-[13px] rounded-[10px] border-2 transition-all py-3 px-6 w-full outline-none placeholder:text-custom-grayscale-dark border-custom-grayscale-light hover:border-custom-primary-light focus:border-custom-primary-light" type="text" autocomplete="off" placeholder="N° de Confirmación" id="search-form-reservation-id"
+                        />
+</div>
+
+                    <button type="button" class="group outline-none" id="buttonSearchBooking_navBar">
+    <div
+    class="h-full transition-all text-[13px] font-bold rounded-[10px] flex items-center justify-center py-3 gap-x-3 group-disabled:cursor-not-allowed  group-disabled:text-custom-grayscale-dark group-disabled:bg-custom-grayscale-semilight outline-none text-white bg-custom-primary hover:bg-custom-primary/80">
+            <span>Buscar reserva</span>
+        </div>
+</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Livewire Component wire-end:WVS83eWEoQCfsPh48UPG -->    <div wire:id="ShBUitcLG87qF5U0Zwav" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;ShBUitcLG87qF5U0Zwav&quot;,&quot;name&quot;:&quot;components.login&quot;,&quot;locale&quot;:&quot;es_costarica&quot;,&quot;path&quot;:&quot;favico.ico&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;83a537f5&quot;,&quot;data&quot;:[],&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;e22da134a45835e5e9e05d675857b7728225ff5d6f624c3452eebffd52e66779&quot;}}" class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+    id="login-modal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true" wire:ignore.self>
+    <div class="modal-dialog relative top-1/4 w-auto sm:max-w-[680px] pointer-events-none my-0" wire:ignore.self>
+        <div class="modal-content bg-white pointer-events-auto rounded-[15px]">
+
+            <div class="modal-body grid grid-cols-12">
+
+                <div class="sm:col-span-5 hidden sm:block">
+                    <img class="w-full h-full object-cover rounded-l-[15px]" src="https://avis.cr/dist/images/home/modals/image_login.png" alt="">
+                </div>
+
+                <div class="col-span-12 sm:col-span-7 flex flex-col px-11 py-8 gap-y-4">
+
+                    <div class="col-span-12 flex items-center justify-between">
+                        <h5 class="text-lg font-semibold text-black">Iniciar sesión</h5>
+                        <button type="button"
+                            class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        >
+                        </button>
+                    </div>
+
+                    <div id="login-form" class="space-y-4 mb-0">
+                        <div class="relative ">
+                <input
+        class="text-black text-[13px] rounded-[10px] border-2 transition-all py-3 px-6 w-full outline-none placeholder:text-custom-grayscale-dark border-custom-grayscale-light hover:border-custom-primary-light focus:border-custom-primary-light" type="email" autocomplete="off" placeholder="Dirección de E-mail" id="login-form-email"
+                        />
+</div>
+                        <div class="relative ">
+                <input
+        class="text-black text-[13px] rounded-[10px] border-2 transition-all py-3 px-6 w-full outline-none placeholder:text-custom-grayscale-dark border-custom-grayscale-light hover:border-custom-primary-light focus:border-custom-primary-light" type="password" autocomplete="off" placeholder="Contraseña" id="login-form-password"
+                        />
+</div>
+
+                        <div class="flex flex-col">
+                            <button type="button" class="group outline-none" id="btnLogin">
+    <div
+    class="h-full transition-all text-[13px] font-bold rounded-[10px] flex items-center justify-center py-3 gap-x-3 group-disabled:cursor-not-allowed  group-disabled:text-custom-grayscale-dark group-disabled:bg-custom-grayscale-semilight outline-none text-white bg-custom-primary hover:bg-custom-primary/80 w-full">
+            <span>Iniciar sesión</span>
+        </div>
+</button>
+                            <a href="https://avis.cr/register" class="self-end mt-7 font-medium">
+                                <p class="text-sm text-custom-primary">Registrar una nueva cuenta</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Livewire Component wire-end:ShBUitcLG87qF5U0Zwav -->
+    
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="back-home-cr-modal" tabindex="-1" aria-labelledby="back-home-cr-modal" aria-hidden="true">
+        <div class="modal-dialog relative top-1/4 w-auto pointer-events-none my-0">
+            <div class="modal-content card pointer-events-auto rounded-[15px]">
+                <div class="modal-header mb-5">
+                    <h5 class="title font-bold text-custom-primary text-center">Regresar al paso anterior</h5>
+                </div>
+                <div class="modal-body mb-8">
+                    <p class="text-black text-[13px] text-center">¿Seguro que desea salir del sitio de cotizaciones?</p>
+                </div>
+                <div class="modal-footer flex items-center justify-evenly">
+
+                    <a href="#" data-bs-dismiss="modal"
+        >
+    <div
+    class="h-full transition-all text-[13px] font-bold rounded-[10px] flex items-center justify-center py-3 gap-x-3 group-disabled:cursor-not-allowed  group-disabled:text-custom-grayscale-dark group-disabled:bg-custom-grayscale-semilight outline-none text-white bg-custom-grayscale hover:bg-custom-grayscale/80 text-black px-8">
+            <span>Cancelar</span>
+        </div>
+</a>
+
+                    <a href=""
+        >
+    <div
+    class="h-full transition-all text-[13px] font-bold rounded-[10px] flex items-center justify-center py-3 gap-x-3 group-disabled:cursor-not-allowed  group-disabled:text-custom-grayscale-dark group-disabled:bg-custom-grayscale-semilight outline-none text-white bg-custom-primary hover:bg-custom-primary/80 px-8">
+            <span>Si, regresar</span>
+        </div>
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Livewire Component wire-end:nm23i79y1rAOj9UV68NX -->    </header>
+
+            <div class="header-container">
+    <img class="w-full h-full object-cover" src="https://avis.cr/dist/images/statics/image_header_background.webp" alt="">
+</div>
+
+    <div class="flex justify-center items-center mt-36 mb-44">
+
+        <div class="w-full flex flex-col items-center px-2">
+
+            <div class="w-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 fill-custom-error" viewBox="0 0 61 61" fill="none">
+                    <path d="M61 30.4994C61 13.6546 47.3444 0 30.5006 0C13.6556 0 0 13.6546 0 30.4994C0 47.3445 13.6556 61 30.5006 61C47.3444 61 61 47.3445 61 30.4994Z" />
+                    <path d="M21 39L38 22M21 22L38 39" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <h2 class="bold text-custom-error text-3xl text-center mt-8">¡Atención!</h2>
+
+            <p class="text-black text-lg mb-8">
+                Lo sentimos, ocurrió un error inesperado. Por favor inténtalo nuevamente.            </p>
+
+            <a href="https://avis.cr"
+        >
+    <div
+    class="h-full transition-all text-[13px] font-bold rounded-[10px] flex items-center justify-center py-3 gap-x-3 group-disabled:cursor-not-allowed  group-disabled:text-custom-grayscale-dark group-disabled:bg-custom-grayscale-semilight outline-none text-white bg-custom-primary hover:bg-custom-primary/80 bg-custom-error px-4">
+            <span>Volver al inicio</span>
+        </div>
+</a>
+        </div>
+    </div>
+
+        <a href="https://api.whatsapp.com/send/?phone=50662449247&text=&type=phone_number&app_absent=0" target="_blank" class="z-20 cursor-pointer rounded-full h-[91px] p-3 w-[91px] bg-white fixed right-[80px] bottom-5">
+    <div class="wsp-circle w-full h-full bg-[#27D045] rounded-full flex items-center justify-center">
+        <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3737 35.2918C27.7165 35.2918 35.2904 27.718 35.2904 18.3752C35.2904 9.03235 27.7165 1.4585 18.3737 1.4585C9.03088 1.4585 1.45703 9.03235 1.45703 18.3752C1.45703 27.718 9.03088 35.2918 18.3737 35.2918Z" stroke="white" stroke-width="2.91667"/>
+            <path d="M2.91769 27.9999L0.234375 37.5082L10.0927 34.7666L10.6177 31.7332L4.201 33.7749L5.89268 27.6499L2.91769 27.9999Z" fill="white"/>
+            <path d="M4.08203 33.8333C4.08203 33.775 6.1237 27.0083 6.1237 27.0083L11.0237 31.6166L4.08203 33.8333Z" fill="#27D045"/>
+            <path d="M11.065 9.99408C10.4694 10.4074 9.96162 10.9346 9.57112 11.5454C9.18062 12.1562 8.91513 12.8384 8.78998 13.5524C8.49831 15.8274 9.89832 18.1608 9.89832 18.1608C11.3184 20.2736 13.0045 22.1949 14.915 23.8774C16.5862 25.1998 18.4836 26.2079 20.515 26.8524C21.6999 27.3255 22.9961 27.447 24.2483 27.2024C25.3582 26.8977 26.3401 26.2431 27.0483 25.3357C27.2142 24.923 27.3317 24.4923 27.3983 24.0524C27.4651 23.6664 27.4651 23.2718 27.3983 22.8857C27.34 22.4774 23.14 20.5524 22.7317 20.6691C22.3233 20.7857 21.9733 21.5441 21.5066 22.1857C21.0399 22.8274 20.865 23.1191 20.3983 23.1191C19.9317 23.1191 17.8899 22.3024 15.9649 20.5524C14.8654 19.599 14.0061 18.4 13.4566 17.0524C13.4566 17.0524 13.8067 16.6441 14.2733 16.0024C14.6364 15.6045 14.8967 15.1239 15.0316 14.6024C15.0316 14.3107 13.3983 10.1691 12.9899 9.99408C12.3514 9.90432 11.7035 9.90432 11.065 9.99408Z" fill="white"/>
+        </svg>                                     
+    </div>
+</a>
+
+<a href="#body" class="buttonToTop fade-in-fwd hidden p-4 rounded-full fixed bg-custom-primary bottom-10 hover:bg-custom-primary-semilight transition-all z-[1000] right-5" >
+    <div class="flex align-center justify-center ">
+        <svg class="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+            <path d="M19,17c-0.4,0-0.8-0.1-1.1-0.4L12,10.6l-5.9,5.9c-0.6,0.6-1.5,0.6-2.1,0s-0.6-1.5,0-2.1l7-7c0.6-0.6,1.5-0.6,2.1,0l7,7
+                c0.6,0.6,0.6,1.5,0,2.1C19.8,16.9,19.4,17,19,17z"/>
+        </svg>
+    </div>
+</a>
+
+        <footer>
+            <div wire:id="OSpMlJeXoWKAX2bo1GXF" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;OSpMlJeXoWKAX2bo1GXF&quot;,&quot;name&quot;:&quot;components.footer&quot;,&quot;locale&quot;:&quot;es_costarica&quot;,&quot;path&quot;:&quot;favico.ico&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:{&quot;l3428505422-0&quot;:{&quot;id&quot;:&quot;PbEmJX0ufmIpJvThqoAC&quot;,&quot;tag&quot;:&quot;div&quot;}},&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;3eb6c562&quot;,&quot;data&quot;:{&quot;data&quot;:{&quot;phone_1&quot;:&quot;2293-2222&quot;,&quot;phone_2&quot;:&quot;6244-9247&quot;,&quot;address_1&quot;:null,&quot;address_2&quot;:null,&quot;email_1&quot;:&quot;reservaciones@avis.co.cr&quot;,&quot;email_2&quot;:&quot;customerservice@avis.co.cr&quot;,&quot;instagram&quot;:&quot;https:\/\/www.instagram.com\/aviscostarica&quot;,&quot;facebook&quot;:&quot;https:\/\/www.facebook.com\/AvisCostaRica&quot;,&quot;youtube&quot;:null,&quot;twitter&quot;:null,&quot;linkedin&quot;:&quot;https:\/\/www.linkedin.com\/company\/avis-costa-rica&quot;,&quot;whatsapp&quot;:&quot;50662449247&quot;},&quot;routeName&quot;:&quot;contact-custom&quot;},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;05c16dd8516f8bdde08e7c2373f1fc962877d3b3d231f6ff801377a0fe9bf8c3&quot;}}" class="footer_container w-full">
+    <div class="bg-white min-h-[140px] xl:min-h-[176px]">
+        
+                    <div class="relative container_1280 mx-auto pb-20 lg:pb-[100px] flex justify-center cursor-pointer" id="footer-banner">
+    <div class="absolute -top-20 lg:-top-[100px] rounded-[15px] footer-banner w-full">
+                <a 
+            class="relative" 
+            href="https://avis.cr/corporate-services" 
+            target="_self">
+               
+            <img src="https://avis.cr/dist/images/footer/banner.webp "
+                alt="Footer banner" class="w-full h-auto min-h-[170px] rounded-[15px] object-cover object-right">
+            <div class="absolute top-0 text-white ml-6 mt-7 xl:ml-12 xl:mt-11 hidden md:block">
+                <p class="uppercase text-xs tracking-[4px]">
+                    Servicios corporativos
+                </p>
+                <p class="text-[22px] font-semibold mt-4 leading-6 hidden md:block max-w-[280px]" style="text-wrap: balance;">
+                    Descubre los beneficios de las rentas corporativas y para asociaciones
+                </p>
+            </div>
+                </a>
+            </div>
+</div>
+                    
+                <div
+            class="container_1280 mx-auto grid grid-cols-2 sm:grid-cols-4 justify-items-center xl:flex xl:justify-between items-center py-9 gap-x-3 gap-y-4">
+            <img src="https://avis.cr/dist/images/footer/cert1.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert2.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert3.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert4.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert5.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert6.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert7.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert8.webp " alt="Certification" class="w-auto h-auto">
+            <img src="https://avis.cr/dist/images/footer/cert9.webp " alt="Certification" class="w-auto h-auto">
+        </div>
+        
+            </div>
+
+    <div class="w-full bg-[#353535]">
+        <div class="container_1280 mx-auto">
+            <div class="pt-12 pb-[58px] border-b-2 border-[#737373]">
+                <div class="flex gap-x-[68px] gap-y-10 flex-col xl:flex-row">
+
+                    <div
+                        class="flex flex-col sm:justify-self-center lg:justify-self-start">
+                        <div class="flex gap-8">
+                            <img style="width: 90px; height: auto;" src="https://avis.cr/dist/images/logo-white.svg"
+                            alt="Avis logo">
+                        </div>
+                        <div class="grid grid-cols-6 gap-4 mt-5 items-center w-fit">
+                                                            <a href="https://www.instagram.com/aviscostarica" target="_blank">
+                                    <img class="col-span-1 cursor-pointer socialLink h-4 w-4"
+                                        src="https://autorenta.greenflame.com.ar/dist/images/icons/footer-instagram-logo.svg"
+                                        alt="">
+                                </a>
+                                                                                        <a href="https://www.facebook.com/AvisCostaRica" target="_blank">
+                                    <img class="col-span-1 cursor-pointer socialLink h-4 w-4"
+                                        src="https://autorenta.greenflame.com.ar/dist/images/icons/footer-facebook-logo.svg"
+                                        alt="">
+                                </a>
+                                                                                                                                                <a href="https://www.linkedin.com/company/avis-costa-rica" target="_blank">
+                                    <img class="col-span-1 cursor-pointer socialLink h-4 w-4"
+                                        src="https://autorenta.greenflame.com.ar/dist/images/icons/footer-linkedin-logo.svg"
+                                        alt="">
+                                </a>
+                                                                                        <a href="https://wa.me/50662449247" target="_blank">
+                                    <img class="col-span-1 cursor-pointer socialLink h-4 w-4"
+                                        src="https://autorenta.greenflame.com.ar/dist/images/icons/footer-whatsapp-logo.svg"
+                                        alt="">
+                                </a>
+                                                    </div>
+                        <div class="mt-6">
+                            <p class="text-white text-[13px]">
+                                Visítenos en nuestras redes sociales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-8 lg:flex justify-between flex-1">
+                        
+                        <div class="col-span-8 sm:col-span-4 lg:col-span-2 flex flex-col mt-6 lg:mt-0">
+                            <p class="text-white font-semibold text-[15px]">Contáctenos
+                            </p>
+                            <div class="mt-5 text-white text-[13px] flex flex-col gap-y-1">
+                                                                    <p>
+                                        Central de reservas: 2293-2222
+                                    </p>
+                                                                                                    <p>
+                                        WhatsApp: 6244-9247
+                                    </p>
+                                                                                                                                    <a href="mailto:reservaciones@avis.co.cr">
+                                        reservaciones@avis.co.cr
+                                    </a>
+                                                                                                    <a href="mailto:customerservice@avis.co.cr">
+                                        customerservice@avis.co.cr
+                                    </a>
+                                                                                                                                                                    <a href="https://avis.cr/phones">Teléfonos de emergencia</a>
+                                                            </div>
+
+                        </div>
+                        
+                        <div class="col-span-8 sm:col-span-4 lg:col-span-2 flex flex-col mt-6 lg:mt-0">
+                            <p class="text-white font-semibold text-[15px]">Servicio al cliente
+                            </p>
+                            <div class="pt-5 flex flex-col items-start text-white text-[13px] gap-y-1">
+                                <a href="https://avis.cr/fleet-guide">Guía de vehículos</a>
+                                                                        <a href="https://avis.cr/extras">Extras y accesorios</a>
+                                        <a href="https://avis.cr/coverages">Coberturas adicionales</a>
+                                        <a href="https://avis.cr/promotions">Ofertas especiales</a>
+                                        <a href="https://avis.cr/corporate-services">Servicios corporativos</a>
+                                        <a href="https://avis.cr/responsibility">Responsabilidad social empresarial</a>
+                                                                    </div>
+                        </div>
+                        
+                        <div class="col-span-8 sm:col-span-4 lg:col-span-2 flex flex-col mt-6 lg:mt-0">
+                            <p class="text-white font-semibold text-[15px]">Gestión de reservas
+                            </p>
+                            <div class="pt-5 flex flex-col items-start text-white text-[13px] gap-y-1">
+                                <a href="https://avis.cr">Cotice su reserva</a>
+                                <button data-bs-toggle="modal"
+                                    data-bs-target="#searchBookingModal">Buscar una reserva</button>
+                                <a href="https://avis.cr/offices">Encontrar una oficina</a>
+                                <a href="https://avis.cr/faqs">Preguntas frecuentes</a>
+                                                                <a href="https://avis.cr/rent-advice">Consejos al alquilar</a>
+                                                                                            </div>
+                        </div>
+                        
+                        <div class="col-span-8 sm:col-span-4 lg:col-span-2 flex flex-col mt-6 lg:mt-0">
+                            <p class="text-white font-semibold text-[15px]">Acerca de nosotros
+                            </p>
+                            <div class="pt-5 flex flex-col items-start text-white text-[13px] gap-y-1">
+                                                                <a href="https://avis.cr/avis">Avis Costa Rica</a>
+                                                                <a href="https://avis.cr/cancellation-policy">Políticas de cancelación</a>
+                                <a href="https://avis.cr/privacy-policy">Políticas de privacidad</a>
+                                <a href="https://avis.cr/cookies">Políticas de cookies</a>
+                                <a href="https://avis.cr/terms-conditions">Términos y condiciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div wire:id="PbEmJX0ufmIpJvThqoAC" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;PbEmJX0ufmIpJvThqoAC&quot;,&quot;name&quot;:&quot;components.subscribe&quot;,&quot;locale&quot;:&quot;es_costarica&quot;,&quot;path&quot;:&quot;favico.ico&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;91f7dc8a&quot;,&quot;data&quot;:[],&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;5636827e13e8c7108b37195e15fa0cff9e1fbceffc366405d3ac83be742807ea&quot;}}" class="py-10 grid xl:grid-cols-12 grid-cols-8 gap-y-8 lg:gap-8 items-center">
+    <div class="flex items-center xl:justify-center sm:justify-center md:justify-start col-span-10 xl:col-span-4">
+        <div>
+            <svg class="hidden sm:block" width="53" height="53"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="9" width="44" height="44" rx="9" fill="#737373"/>
+                <path d="m28.97 27.71-.614.79.614-.79Zm-5.333-4.148-.614.79.614-.79Zm-3.274 0 .614.79v-.001l-.614-.79ZM15.03 27.71l-.614-.79.614.79Zm-.758.933.898.44-.898-.44ZM14 29.815h1-1Zm15.414 8.614.707.707-.707-.707Zm-2.928-3.573a1 1 0 1 0-1.033-1.712l1.033 1.712Zm-8-1.712a1 1 0 0 0-1.033 1.712l1.034-1.712Zm11.098-6.224-5.333-4.148-1.228 1.58 5.333 4.147 1.228-1.579Zm-5.333-4.148a3.667 3.667 0 0 0-2.25-.772v2c.37 0 .73.123 1.022.351l1.228-1.579ZM22.001 22c-.816 0-1.608.272-2.252.773l1.228 1.578A1.666 1.666 0 0 1 22 24v-2Zm-2.252.772-5.334 4.148 1.228 1.58 5.334-4.149-1.228-1.579Zm-5.334 4.148c-.44.343-.797.782-1.043 1.284l1.797.878c.112-.228.274-.427.474-.583l-1.228-1.579Zm-1.043 1.284A3.664 3.664 0 0 0 13 29.815h2c0-.254.058-.505.17-.733l-1.798-.878ZM13 29.814v7.2h2v-7.2h-2Zm0 7.2a3 3 0 0 0 .879 2.122l1.414-1.414a1 1 0 0 1-.293-.707h-2Zm.879 2.122a3 3 0 0 0 2.121.879v-2a1 1 0 0 1-.707-.293l-1.414 1.414Zm2.121.879h12v-2H16v2Zm12 0a3 3 0 0 0 2.121-.879l-1.414-1.414a1 1 0 0 1-.707.293v2Zm2.122-.879A3 3 0 0 0 31 37.015h-2a1 1 0 0 1-.293.707l1.415 1.414ZM31 37.015v-7.2h-2v7.2h2Zm0-7.2c0-1.132-.522-2.2-1.416-2.895l-1.227 1.58c.405.315.643.8.643 1.315h2Zm-5.547 3.329c-.913.551-2.172.856-3.484.856-1.312 0-2.57-.305-3.482-.856l-1.034 1.712C18.748 35.638 20.385 36 21.97 36s3.221-.362 4.517-1.144l-1.033-1.712Z" fill="#fff"/>
+                <circle cx="42" cy="11" r="9" fill="#D4002A" stroke="#353535" stroke-width="4"/>
+            </svg>
+        </div>
+        <h3 class="text-white font-semibold text-[15px] sm:ml-6 text-center sm:text-start" style="text-wrap: balance;">¿Desea suscribirse y recibir nuestras novedades en su E-mail?</h3>
+    </div>
+    <form class="subscribe-form col-span-8 flex gap-8 flex-wrap mb-0" id="subscribe-form" wire:ignore>
+        <div class="w-full sm:w-auto sm:flex-1">
+            <div class="relative ">
+                <input
+        class="text-black text-[13px] rounded-[10px] border-2 transition-all py-3 px-6 w-full outline-none placeholder:text-custom-grayscale-dark border-custom-grayscale-light hover:border-text-black focus:border-text-black placeholder:!text-black" placeholder="Nombre y apellido" id="subscribe-form-fullname"
+                        />
+</div>
+
+        </div>
+        <div class="w-full sm:w-auto sm:flex-1 lg:mr-0 relative">
+            <div class="relative ">
+                <input
+        class="text-black text-[13px] rounded-[10px] border-2 transition-all py-3 px-6 w-full outline-none placeholder:text-custom-grayscale-dark border-custom-grayscale-light hover:border-custom-primary-light focus:border-custom-primary-light placeholder:!text-black" placeholder="Ingresa su correo electrónico" type="email" id="subscribe-form-email"
+                        />
+</div>
+
+            <button
+                id="buttonRegisterNewsletter"
+                type="submit"
+                class="absolute ml-auto bg-custom-primary hover:bg-custom-primary/80 text-white rounded-md px-4 text-xs font-medium top-1/2 -translate-y-1/2 right-2 h-4/5 disabled:bg-custom-grayscale disabled:cursor-not-allowed w-[123px] outline-none inline-flex items-center justify-around">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white">
+                    <path d="M13.7726 0.0136765C13.4685 -0.0306155 13.1322 0.0369395 12.7877 0.154804C12.6 0.218615 12.9048 0.117276 7.27441 1.89046C7.26615 1.89346 2.19194 3.49622 1.80833 3.62685C0.625583 4.02848 0.0449106 4.587 0.00189487 5.59746C-0.028584 6.31365 0.311038 6.84438 0.846442 7.19271C1.00537 7.29556 1.10769 7.36237 1.31564 7.4502C1.34994 7.46447 1.35167 7.46071 1.38605 7.47423C1.81238 7.63863 2.56317 7.78502 3.59127 7.94342C4.10175 8.02149 4.64151 8.11008 5.18653 8.17764C5.28795 8.19041 5.42488 8.20617 5.58531 8.22494C5.73695 8.42237 5.93431 8.65735 6.0545 8.81124C6.54397 9.43734 7.04394 10.0552 7.53267 10.6408C7.66554 10.8007 7.80368 10.9614 7.9313 11.11C8.47181 11.7436 8.9395 12.2675 9.33888 12.6586C9.92669 13.2337 10.5738 13.516 11.2389 13.5265C12.3793 13.5452 13.2141 12.8118 13.4911 11.697C13.5294 11.5453 13.7553 10.0169 14.1952 7.12214C14.4617 5.3655 14.9309 2.26281 14.9459 2.17197C14.988 1.89871 15.0135 1.68327 14.9925 1.44454C14.9602 1.07444 14.8228 0.737356 14.5706 0.459593C14.3341 0.199096 14.0766 0.05797 13.7726 0.0136765ZM11.591 2.10141L5.79648 6.72354C5.66526 6.70477 5.56496 6.70027 5.37421 6.67625C4.84285 6.61019 4.31991 6.54111 3.82587 6.46529C2.90925 6.32416 2.21446 6.17777 1.92559 6.06667C1.91208 6.06141 1.73071 5.9901 1.66757 5.94881C1.54618 5.86999 1.49746 5.80392 1.50331 5.66729C1.5154 5.38352 1.62065 5.28067 2.27752 5.05771C2.64365 4.93309 7.73536 3.32432 7.74362 3.32132C11.7862 2.04811 11.2952 2.20201 11.591 2.10141ZM13.374 2.59462C13.1945 3.77398 12.0542 11.2518 12.0369 11.3216C11.9191 11.7938 11.6608 12.0318 11.263 12.025C10.9897 12.0205 10.7134 11.8915 10.3944 11.5792C10.0333 11.2256 9.57085 10.7271 9.05736 10.125C8.93425 9.9801 8.81113 9.83446 8.68201 9.67907C8.20456 9.10627 7.70759 8.48769 7.22787 7.87285C7.18057 7.8128 7.13478 7.73397 7.06346 7.63788L13.374 2.59462Z" fill="currentColor"/>
+                </svg>
+                Enviar
+            </button>
+
+        </div>
+    </form>
+</div>
+
+        
+<!-- Livewire Component wire-end:PbEmJX0ufmIpJvThqoAC -->            </div>
+        </div>
+        <div class="bg-black-semidark py-10 bg-[#2D2D2D]">
+            <div class="container_1280 mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-y-5 sm:gap-y-0">
+                <div class="flex sm:items-center flex-col sm:flex-row">
+                    <p class="text-white text-xs mr-10 mb-5 sm:mb-0">© 2025 - Copyright Avis Rent a Car. Todos los derechos reservados</p>
+                </div>
+                
+                <img src="https://avis.cr/dist/images/icons/greenFlame-white.svg" alt="GreenFlame logo" class="max-w-[125px]">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Livewire Component wire-end:OSpMlJeXoWKAX2bo1GXF -->        </footer>
+
+
+        
+
+        <!-- BEGIN: JS Assets-->
+         
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPxDYTnv14Lhfvxot8rTfcMH2o_JrPR3Q" async defer></script>
+        
+        <script src="https://avis.cr/js/jquery-3.6.0.min.js"></script>
+        <script src="https://avis.cr/js/tailwind-index.js"></script>
+        <script src="https://avis.cr/js/lib/tom-select.complete.js"></script>
+            <script src="https://www.google.com/recaptcha/api.js?render=6Lfv23QqAAAAAB4JRNLOQTNujMjefj5LSjiNBquW"></script>
+            <script src="https://avis.cr/js/app.js?v="></script>
+          <script>
+    window.addEventListener('load', () => {
+        const validatorSearchBooking = registerFormValidator(JSON.parse(atob('eyJpZCI6InNlYXJjaC1ib29raW5nLWZvcm0iLCJsYXN0bmFtZSI6eyJpZCI6InNlYXJjaC1mb3JtLWxhc3RuYW1lIiwicnVsZXMiOlt7InJ1bGUiOiJyZXF1aXJlZCIsImVycm9yTWVzc2FnZSI6IkVzdGUgY2FtcG8gZXMgcmVxdWVyaWRvIn0seyJydWxlIjoibWF4TGVuZ3RoIiwidmFsdWUiOjYwLCJlcnJvck1lc3NhZ2UiOiJJbmdyZXNlIG5vIG1cdTAwZTFzIGRlIDYwIGNhcmFjdGVyZXMifV19LCJyZXNlcnZhdGlvbiI6eyJpZCI6InNlYXJjaC1mb3JtLXJlc2VydmF0aW9uLWlkIiwicnVsZXMiOlt7InJ1bGUiOiJyZXF1aXJlZCIsImVycm9yTWVzc2FnZSI6IkVzdGUgY2FtcG8gZXMgcmVxdWVyaWRvIn0seyJydWxlIjoibWF4TGVuZ3RoIiwidmFsdWUiOjYwLCJlcnJvck1lc3NhZ2UiOiJJbmdyZXNlIG5vIG1cdTAwZTFzIGRlIDYwIGNhcmFjdGVyZXMifV19fQ==')))
+
+        $('#buttonSearchBooking_navBar').on('click', ()=>{
+            validatorSearchSubmit()
+        });
+
+        $('#searchBookingModal').keypress(function (e) {
+            if(e.which == 13) {
+                validatorSearchSubmit()
+            }
+        });
+
+        function validatorSearchSubmit() {
+
+            validatorSearchBooking.submit().then(({isValid, values}) => {
+                if (isValid) {
+                    $("#searchBookingModal").modal('hide');
+                    window.livewire.find('WVS83eWEoQCfsPh48UPG').emit('openSpinner');
+                    window.livewire.find('WVS83eWEoQCfsPh48UPG').SearchBooking(values['#search-form-lastname'], values['#search-form-reservation-id']);
+                }
+            })
+
+        }
+
+
+    })
+
+  </script>
+    <script>
+        window.addEventListener('load', () => {
+
+            const validatorLogin = registerFormValidator(JSON.parse(atob('eyJpZCI6ImxvZ2luLWZvcm0iLCJlbWFpbCI6eyJpZCI6ImxvZ2luLWZvcm0tZW1haWwiLCJydWxlcyI6W3sicnVsZSI6InJlcXVpcmVkIiwiZXJyb3JNZXNzYWdlIjoiRXN0ZSBjYW1wbyBlcyByZXF1ZXJpZG8ifSx7InJ1bGUiOiJlbWFpbCIsImVycm9yTWVzc2FnZSI6IkluZ3Jlc2UgdW4gZW1haWwgdlx1MDBlMWxpZG8ifSx7InJ1bGUiOiJtYXhMZW5ndGgiLCJ2YWx1ZSI6MTAwLCJlcnJvck1lc3NhZ2UiOiJJbmdyZXNlIG5vIG1cdTAwZTFzIGRlIDEwMCBjYXJhY3RlcmVzIn1dfSwicGFzc3dvcmQiOnsiaWQiOiJsb2dpbi1mb3JtLXBhc3N3b3JkIiwicnVsZXMiOlt7InJ1bGUiOiJyZXF1aXJlZCIsImVycm9yTWVzc2FnZSI6IkVzdGUgY2FtcG8gZXMgcmVxdWVyaWRvIn0seyJydWxlIjoibWF4TGVuZ3RoIiwidmFsdWUiOjEwMCwiZXJyb3JNZXNzYWdlIjoiSW5ncmVzZSBubyBtXHUwMGUxcyBkZSAxMDAgY2FyYWN0ZXJlcyJ9XX19')))
+            const btnLogin = document.getElementById('btnLogin');
+
+            btnLogin.addEventListener('click', (e) => {
+                validatorLoginSubmit()
+            });
+
+
+            $('#login-modal').keypress(function (e) {
+                if(e.which == 13) {
+                    validatorLoginSubmit()
+                }
+            });
+
+            function validatorLoginSubmit() {
+
+                validatorLogin.submit().then(({isValid, values}) => {
+                    if (isValid) {
+                        $("#login-modal").modal('hide');
+                        spinner.show();
+                        window.livewire.find('ShBUitcLG87qF5U0Zwav').login(values['#login-form-email'], values['#login-form-password']);
+                    }
+                })
+
+            }
+
+        })
+
+        window.addEventListener('livewire:load', () => {
+            Livewire.on('onLogin', (data) => {
+                document.cookie = `refresh_jwt=${data.refresh_token}; Path=/; Max-Age=${(62 * 24 * 60 * 60)};`
+
+                let modalContent = `${'Recuerde que podrá administrar su cuenta y ver sus reservas en: '}
+                <a href="${'https://backoffice.avis.cr'}" target="__blank" class="inline-block font-bold text-custom-primary">
+                    ${'https://backoffice.avis.cr'}
+                </a>`;
+
+                if ('contact-custom' != 'home') {
+                    modalContent += `<div class="w-full p-6 rounded-[10px] bg-gray-100 mt-6">
+                            <div class="sm:flex items-start sm:items-center">
+                                <div class="hidden sm:block">
+                                    <svg class="w-5 h-5 fill-gray-300 mr-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M11.9989 2.0141C6.4761 2.0141 1.9989 6.4911 1.9989 12.0141C1.9989 17.5371 6.4761 22.0141 11.9989 22.0141C17.5217 22.0141 21.9989 17.5371 21.9989 12.0141C21.9989 6.4911 17.5217 2.0141 11.9989 2.0141ZM11.9989 7.0141C12.5512 7.0141 12.9989 7.4621 12.9989 8.0141C12.9989 8.5661 12.5512 9.0141 11.9989 9.0141C11.4466 9.0141 10.9989 8.5661 10.9989 8.0141C10.9989 7.4621 11.4466 7.0141 11.9989 7.0141ZM11.9989 10.0141C12.5512 10.0141 12.9989 10.4621 12.9989 11.0141V16.0141C12.9989 16.5661 12.5512 17.0141 11.9989 17.0141C11.4466 17.0141 10.9989 16.5661 10.9989 16.0141V11.0141C10.9989 10.4621 11.4466 10.0141 11.9989 10.0141Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="text-left text-black font-semibold">
+                                    ${'Al hacer click en el boton Recargar se actualizarán los datos en la web, tenga en cuenta que perderá la información ingresada en los formularios.'}
+                                </p>
+                            </div>
+                        </div>`;
+                }
+
+                ResponseModal.open(
+                    {
+                        title: '¡Bienvenido!' + ' ' + data.user.name + ' ' + data.user.last_name + '!',
+                        content: modalContent,
+                        buttons: [
+                            { text: 'Recargar', onClick: () => location.reload() },
+                        ],
+                        state: 'success',
+                    }
+                );
+                ResponseModal.disableClose();
+            });
+
+        });
+    </script>
+        <script>
+            window.spinner = {
+                element: document.getElementById('spinner'),
+                hide: function() {
+                    this.element.children[0].classList.add('-translate-y-12');
+                    this.element.classList.add('opacity-0');
+                    this.element.classList.remove('opacity-1');
+
+                    setTimeout(() => {
+                        this.element.classList.add('hidden');
+                        this.element.classList.remove('flex');
+                    }, 160);
+                },
+
+                show: function() {
+                    this.element.classList.remove('hidden');
+                    this.element.classList.add('flex');
+
+                    setTimeout(() => {
+                        this.element.classList.remove('opacity-0');
+                        this.element.classList.add('opacity-1');
+                    }, 100);
+                }
+            }
+
+            window.addEventListener('livewire:load', () => {       
+                Livewire.on('openSpinner', () => {
+                    spinner.show();
+                })
+
+                Livewire.on('closeSpinner', () => {
+                    spinner.hide();
+                })
+            });
+
+            window.addEventListener('load', () => {
+                if (document.readyState === 'complete') {
+                    spinner.hide();
+                }
+            })
+
+            setTimeout(() => {
+                if (document.readyState === 'interactive') {
+                    spinner.hide();
+                }
+            }, 4000);
+        </script>
+            <script>
+            const ResponseModal = {
+                element: document.getElementById('response-modal')
+            }
+
+            ResponseModal.modal = new Modal(ResponseModal.element);
+
+            ResponseModal.setConfig = (config, value) => {
+                ResponseModal.modal._config[config] = value;
+            }
+
+            ResponseModal.open = (data) => {
+                const { title, content, buttons, state } = data;
+                const buttonsElems = [];
+
+                ResponseModal.changeState(state);
+                ResponseModal.setTitle(title);
+                ResponseModal.setContent(content);
+
+                // Add buttons
+                const buttonsContainer = document.getElementById('response-modal-buttons');                
+                const buttonTemplate = document.getElementById('button-template');
+                
+                buttons.forEach(({ text, type = 'primary', attrs, onClick }) => {
+                    const button = buttonTemplate.content.firstElementChild.cloneNode(true);                    
+                    const buttonDiv = button.querySelector('div');
+                    
+                    button.querySelector('span').innerText = text;
+
+                    if (type !== 'primary') {
+                        buttonDiv.classList.remove('bg-custom-primary', 'hover:bg-custom-primary/80');
+                    }
+
+                    if (type === 'error') {
+                        buttonDiv.classList.add('bg-custom-primary', 'hover:bg-custom-primary/80');
+                    } else if (type === 'gray') {
+                        buttonDiv.classList.remove('text-white');
+                        buttonDiv.classList.add('bg-custom-grayscale-ultralight', 'hover:bg-custom-grayscale-ultralight/80', 'text-custom-grayscale-dark')
+                    }
+
+                    if (attrs)
+                        attrs.forEach(([name, value]) => {
+                            button.setAttribute(name, value);
+                        });
+
+                    if (onClick) 
+                        button.addEventListener('click', onClick);
+
+                    buttonsContainer.appendChild(button);
+                });
+
+                $("#response-modal").modal('show');
+
+                return { buttons: buttonsContainer.childNodes }
+            }
+
+            ResponseModal.clear = () => {
+                ResponseModal.enableClose();
+
+                // Borrar botones
+                const buttonsContainer = document.getElementById('response-modal-buttons');
+                while (buttonsContainer.firstChild) {
+                    buttonsContainer.removeChild(buttonsContainer.firstChild);
+                }
+
+                const contentContainer = document.getElementById('response-modal-content');
+                while (contentContainer.firstChild) {
+                    contentContainer.removeChild(contentContainer.firstChild);
+                }
+
+                ResponseModal.setTitle('');
+            }
+            
+            ResponseModal.hide = () => {
+                $("#response-modal").modal('hide');
+            }
+
+            $('#response-modal').on('hidden.bs.modal', () => {
+                ResponseModal.clear();
+            });
+
+
+            ResponseModal.changeState = (newState = 'success') => {
+                ResponseModal.element.dataset.state = newState;
+            }
+
+            ResponseModal.setTitle = (title) => {
+                document.getElementById('response-modal-title').innerText = title;
+            }
+
+            ResponseModal.setContent = (content) => {
+                let contentStr = '';
+                if (content instanceof Array) {                    
+                    content.forEach(element => {
+                        contentStr += `<p>${element}</p>`
+                    });
+                } else contentStr = content;
+
+                const contentContainer = document.getElementById('response-modal-content');
+                contentContainer.innerHTML = contentStr;
+            }
+
+            ResponseModal.disableClose = () => {
+                ResponseModal.setConfig('backdrop', 'static');
+                ResponseModal.setConfig('keyboard', false);
+            }
+
+            ResponseModal.enableClose = () => {
+                ResponseModal.setConfig('backdrop', true);
+                ResponseModal.setConfig('keyboard', true);
+            }
+
+            ResponseModal.disableButtons = () => {
+                const buttons = document.querySelectorAll('#response-modal-buttons button');
+                buttons.forEach(button => button.disabled = true);
+            }
+
+            ResponseModal.enableButtons = () => {
+                const buttons = document.querySelectorAll('#response-modal-buttons button');
+                buttons.forEach(button => button.disabled = false);
+            }
+
+            window.ResponseModal = ResponseModal;
+
+            
+            window.addEventListener('load', function() {
+                Livewire.on('openResponseModal', (type, data) => {
+                    ResponseModal.open(
+                        {
+                            title: data.title, 
+                            content: data.text,
+                            buttons: [
+                                { text: 'Cerrar', type: type === 'error' ? 'error' : 'primary', attrs: [['data-bs-dismiss', 'modal']] },
+                                // { text: 'Cancelar reserva', type: 'danger', attrs: [['id', 'cancel-btn']] },
+                            ],
+                            state: type,
+                        }
+                    );
+                });
+
+                Livewire.on('closeResponseModal', () => {
+                    $("#response-modal").modal('hide')
+                });
+            });
+        </script>
+        <script>
+        window.addEventListener('scroll', () => {
+            // console.log(window.innerHeight);
+            // console.log(window.pageYOffset);
+            let {innerHeight, pageYOffset} = window;
+
+            if(innerHeight <= pageYOffset){
+                $(".buttonToTop")[0].classList.remove('hidden');
+            }else{
+                $(".buttonToTop")[0].classList.add('hidden');
+            }
+        })
+    </script>
+    <script>
+        const langMenus = document.querySelectorAll('.language-menu').forEach(el =>
+            el.addEventListener('click', (e) => {
+                const lang = e.target.dataset.lang;
+                if (e.target.tagName === 'BUTTON' && lang) {
+                    spinner.show();
+                    document.cookie = `lang_pref=${e.target.dataset.lang}; Path=/; Max-Age=34560000;`;
+                    const url = new URL(window.location.href);
+                    const searchParams = new URLSearchParams(url.search);
+                    if (searchParams.has('lang')) {
+                        searchParams.delete('lang');
+                        url.search = searchParams.toString();
+                        window.location.href = url.toString();
+                        return;
+                    }
+
+                    location.reload();
+                }
+            })
+        );
+
+        const offCanvas = $('#navbar-offcanvas');
+        window.addEventListener('resize', () => {
+            if (window.matchMedia("(min-width: 1280px)").matches) {
+                offCanvas.offcanvas('hide');
+            }
+        });
+
+        const offCanvasEl = $('#navbar-offcanvas')[0];
+        const menuBtn = document.getElementById('nav-menu-btn');
+
+        offCanvasEl.addEventListener('show.bs.offcanvas', () => {
+            menuBtn.classList.add('show');
+        });
+
+        offCanvasEl.addEventListener('shown.bs.offcanvas', () => {
+            menuBtn.classList.remove('show');
+            menuBtn.classList.add('shown');
+        });
+
+        offCanvasEl.addEventListener('hide.bs.offcanvas', () => {
+            menuBtn.classList.remove('shown');
+            menuBtn.classList.add('hide');
+        });
+
+        offCanvasEl.addEventListener('hidden.bs.offcanvas', () => {
+            menuBtn.classList.remove('hide', 'show', 'shown');
+        });
+    </script>
+        <script>
+            const validatorSubscribe = registerFormValidator(JSON.parse(atob('eyJpZCI6InN1YnNjcmliZS1mb3JtIiwiZnVsbG5hbWUiOnsiaWQiOiJzdWJzY3JpYmUtZm9ybS1mdWxsbmFtZSIsInJ1bGVzIjpbeyJydWxlIjoicmVxdWlyZWQiLCJlcnJvck1lc3NhZ2UiOiJFc3RlIGNhbXBvIGVzIHJlcXVlcmlkbyJ9LHsicnVsZSI6Im1heExlbmd0aCIsInZhbHVlIjo2NCwiZXJyb3JNZXNzYWdlIjoiSW5ncmVzZSBubyBtXHUwMGUxcyBkZSA2NCBjYXJhY3RlcmVzIn1dfSwiZW1haWwiOnsiaWQiOiJzdWJzY3JpYmUtZm9ybS1lbWFpbCIsInJ1bGVzIjpbeyJydWxlIjoicmVxdWlyZWQiLCJlcnJvck1lc3NhZ2UiOiJFc3RlIGNhbXBvIGVzIHJlcXVlcmlkbyJ9LHsicnVsZSI6ImVtYWlsIiwiZXJyb3JNZXNzYWdlIjoiSW5ncmVzZSB1biBlbWFpbCB2XHUwMGUxbGlkbyJ9LHsicnVsZSI6Im1heExlbmd0aCIsInZhbHVlIjoxMDAsImVycm9yTWVzc2FnZSI6IkluZ3Jlc2Ugbm8gbVx1MDBlMXMgZGUgMTAwIGNhcmFjdGVyZXMifV19fQ==')));
+
+            validatorSubscribe.form.addEventListener('submit', (e) => {
+                validatorSubscribe.submit().then(({ isValid,values}) => {
+
+                    if (isValid) {
+                        spinner.show();
+                        grecaptcha.ready(() => {
+                            grecaptcha.execute('6Lfv23QqAAAAAB4JRNLOQTNujMjefj5LSjiNBquW', {action: 'submit'}).then((token) => {
+                                window.livewire.find('PbEmJX0ufmIpJvThqoAC').send({
+                                    'name': values['#' + 'subscribe-form-fullname'],
+                                    'email': values['#' + 'subscribe-form-email'],
+                                    'captcha_token': token
+                                }).then((success) => {
+                                    if (success) {
+                                        validatorSubscribe.form.reset();
+                                        ResponseModal.open(
+                                            {
+                                                title: '¡Gracias por contactarnos!',
+                                                content: 'En breve nos pondremos en contacto con usted.',
+                                                buttons: [
+                                                    { text: 'Cerrar', attrs: [['data-bs-dismiss', 'modal']] },
+                                                ],
+                                                state: 'success',
+                                            }
+                                        );
+                                    } else {
+                                        ResponseModal.open(
+                                        {
+                                            title: 'Ha ocurrido un error',
+                                            content: 'Hubo un problema al enviar el mensaje. Intente nuevamente en unos momentos.',
+                                            buttons: [
+                                                { text: 'Cerrar', type: 'error', attrs: [['data-bs-dismiss', 'modal']] },
+                                            ],
+                                            state: 'error',
+                                        }
+                                    );
+                                    }
+                                    spinner.hide();
+                                });
+                            });
+                        });
+                    }
+                })
+            })
+        </script>
+            <!-- END: JS Assets-->
+        <script src="/livewire/livewire.js?id=c69d0f2801c01fcf8166" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'jcuN7vFhmSDffFl6ffTTP483Spx3ljP5rZocgI7e';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+
+            </body>
+
+
+</html>

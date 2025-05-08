@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+    
+    
+	<title>dertour.sk | Booking</title>
+    
+    <script src="/www/dertour.sk/assets/js/vendors.min.js"></script>
+
+    <script>
+        var basePath = "\/www\/dertour.sk";
+        var filterDayToMonthsScale = 3;
+    </script>
+	
+	<link rel="stylesheet" href="/www/dertour.sk/assets/css/app.min.css">
+</head>
+	<body>
+<header>
+    <div class="shadow fixed-top bg-white">
+        <div class="container">
+<nav class="navbar navbar-light pr-0 pl-0 z-index-2">
+    <ul class="navbar-nav ml-auto flex-row">
+        <li class="pointer nav-item mr-3 mr-md-5 d-none d-md-block ">
+            <a href="tel:info@dertour.sk" class="nav-link"><i class="fas fa-phone fa-flip-horizontal"></i> info@dertour.sk</a>
+        </li>
+        <li class="pointer nav-item mr-3 mr-md-5 ">
+            <a data-view-wishlist-button class="nav-link" data-wishlist title="Môj výber" data-toggle="modal" data-target="#myModalWishlist">
+                <input type="hidden" name="viewWishlistLink" value="/?do=navigation-headerContact-Wishlist">
+                <span >
+                    <i class="fas fa-heart " aria-hidden="true"></i> <strong class="wishlist-count">0</strong>
+                </span>
+                <span class="d-none d-md-inline">
+                    Môj výber
+                </span>
+            </a>
+        </li>
+        <li class="pointer nav-item mr-2 mr-md-0 ">
+            <a data-view-history-button class="nav-link"  href="/?do=navigation-headerContact-ViewHistory" title="Zobraziť históriu" id="view-history-button">
+                <span >
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                </span>
+                <span class="d-none d-md-inline">
+                    Zobraziť históriu
+                </span>
+            </a>
+            <div data-view-history-container class="d-none custom-popover-content" >
+                <div class="card h-100">
+
+                    <div class="card-body p-1 h-100">
+                        <div class="row">
+                            <div class="col-8">
+                                <h3 class="h6">
+                                    Zobraziť históriu
+                                </h3>
+                            </div>
+                            <div class="col-4 text-right">
+                                <button type="button" class="btn p-0 close-button">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div data-scroll-only-div data-plugin="perfectScollbar" class="custom-height">
+<div id="snippet-navigation-headerContact-viewHistoryList"><div class="row">
+    <div class="col-12">Vaša história je momentálne prázdna</div>
+</div></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div data-view-wishlist-container id="myModalWishlist" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+<div id="snippet-navigation-headerContact-viewWishlist"><div class="modal-content modal-wishlist">
+    <div class="modal-header">
+            <h4 data-wishlist-header class="d-none">
+                <i class="fas fa-heart"></i>
+                    Vo výbere máte <b class="modal--wishlist__content__header__wishlist-count">0</b> hotelov
+            </h4>
+            <h4 data-wishlist-header class="text-secondary"><i class="far fa-lightbulb"></i> Váš výber je prázdny</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p data-wishlist-header class="hotel-list__info__description">Váš obľúbený hotel si pridáte do zoznamu Wishlist jednoducho kliknutím na tlačidlo v tvare srdiečka: </p>
+    </div>
+</div>
+</div>    </div>
+</div>
+
+
+<nav class="navbar navbar-light navbar-expand-md pr-0 pl-0 main-nav">
+    <a href="https://www.dertour.sk" class="navbar-brand"><img src="/www/dertour.sk/assets/img/logo.png" alt="logo" height="50"></a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#nav_collapse" aria-controls="nav_collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav_collapse" class="navbar-collapse collapse ">
+        <ul class="navbar-nav ml-auto">
+            <li class="d-md-none nav-item ">
+                <a href="tel:info@dertour.sk" class="nav-link btn btn-link"><i class="fas fa-phone fa-flip-horizontal"></i> info@dertour.sk</a>
+            </li>
+            <li class="dropdown  nav-item">
+                <a href="#"
+                   title="Vyhľadať dovolenku"
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   id="dropVyhľadať dovolenku"
+                         data-toggle="dropdown" 
+                   target="_self" class="nav-link dropdown-toggle btn btn-link">Vyhľadať dovolenku
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropVyhľadať dovolenku">
+                    <a href="https://www.dertour.sk/regiony" title="Vyhľadať dovolenku" target="_self" class="dropdown-item">
+                        Vyhľadať dovolenku
+                    </a>
+                    <a href="https://www.dertour.sk/golf" title="" target="_self" class="dropdown-item">
+                        Golfové pobyty
+                    </a>
+                    <a href="https://www.dertour.sk/dertour-hotels-resorts-nase-hotelove-znacky" title="" target="_self" class="dropdown-item">
+                        DERTOUR Hotels &amp; Resorts – naše hotelové značky
+                    </a>
+                    <a href="https://www.dertour.sk/dertour-deluxe" title="" target="_blank" class="dropdown-item">
+                        DERTOUR Deluxe
+                    </a>
+                    <a href="https://www.dertour.sk/plavby-2" title="" target="_blank" class="dropdown-item">
+                        Plavby
+                    </a>
+                    <a href="https://www.dertour.sk/kempingova-dovolenka" title="" target="_self" class="dropdown-item">
+                        Kempingová dovolenka
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown  nav-item">
+                <a href="#"
+                   title=""
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   id="drop"
+                         data-toggle="dropdown" 
+                   target="_self" class="nav-link dropdown-toggle btn btn-link">Informácie
+                </a>
+                <div class="dropdown-menu" aria-labelledby="drop">
+                    <a href="https://www.dertour.sk/poistenie" title="Cestovné poistenie" target="_self" class="dropdown-item">
+                        Cestovné poistenie
+                    </a>
+                    <a href="https://www.dertour.sk/poistenie-insolventnosti" title="POISTENIE INSOLVENTNOSTI" target="_self" class="dropdown-item">
+                        Poistenie insolventnosti
+                    </a>
+                    <a href="https://www.dertour.sk/flexibilita-v-cestovani" title="" target="_self" class="dropdown-item">
+                        Flexibilita v cestovaní
+                    </a>
+                    <a href="https://www.dertour.sk/vseobecne-obchodne-podmienky" title="Všeobecné obchodné podmienky" target="_self" class="dropdown-item">
+                        Všeobecné obchodné podmienky
+                    </a>
+                    <a href="https://www.dertour.sk/reklamacny-poriadok" title="Reklamačný poriadok" target="_self" class="dropdown-item">
+                        Reklamačný poriadok
+                    </a>
+                    <a href="https://www.dertour.sk/informacie/ochrana-osobnych-udajov" title="Ochrana osobných údajov" target="_self" class="dropdown-item">
+                        Ochrana osobných údajov
+                    </a>
+                    <a href="https://www.dertour.sk/udrzatelnost" title="Udržateľnosť" target="_self" class="dropdown-item">
+                        Udržateľnosť
+                    </a>
+                </div>
+            </li>
+            <li class="dropdown  nav-item">
+                <a href="#"
+                   title="O nás"
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   id="dropO nás"
+                         data-toggle="dropdown" 
+                   target="_self" class="nav-link dropdown-toggle btn btn-link">O nás
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropO nás">
+                    <a href="https://www.dertour.sk/nasa-firma" title="Naša firma" target="_self" class="dropdown-item">
+                        Naša firma
+                    </a>
+                    <a href="https://www.dertour.sk/kontakty" title="Kontakt" target="_blank" class="dropdown-item">
+                        Kontakt
+                    </a>
+                    <a href="https://www.dertour.sk/partnerske-cestovne-kancelarie-a-agentury" title="" target="_self" class="dropdown-item">
+                        Partnerské cestovné kancelárie a agentúry
+                    </a>
+                </div>
+            </li>
+            <li class=" nav-item">
+                <a href="https://epaper.dertour-group.com/"
+                   title="Online katalógy"
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   id="dropOnline katalógy"
+                        
+                   target="_blank" class="nav-link btn btn-link">Online katalógy
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a href="https://www.dertour.sk/blog"
+                   title="Blog"
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   id="dropBlog"
+                        
+                   target="_self" class="nav-link btn btn-link">Blog
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a href="https://www.dertour.sk/dovolenkove-tipy-a-zlavove-akcie"
+                   title=""
+                   role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   id="drop"
+                        
+                   target="_self" class="nav-link btn btn-link">Dovolenkové tipy a zľavové akcie
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>        </div>
+    </div>
+</header>        
+        <div class="container mt-5">
+<div class="card" id="overview">
+    <div class="card-body" style="text-align: center;">
+        <p class="h1">Chyba 404</p>
+        <p class="lead"></p>
+        <h1 style="font-size: 2em;">Stránka nebola nájdená</h1><p>Požadovaná stránka nemohla byť nájdená. Je možné, že adresa je nesprávna alebo stránka už neexistuje.</p><p>Prosím, navštívte našu <a href="https://www.dertour.sk" title="úvodná stránka">úvodnú stránku</a></p><p><small>chyba 404</small></p>
+    </div>
+</div>
+
+
+
+        </div>
+        <script src="/www/dertour.sk/assets/js/app.min.js"></script>
+
+
+
+	</body>
+</html>

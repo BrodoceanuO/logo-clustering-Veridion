@@ -1,0 +1,4 @@
+<Error>
+  <Code>AgentForbidden</Code>
+  <Message>The specified key is not accessible.</Message>
+</Error>
